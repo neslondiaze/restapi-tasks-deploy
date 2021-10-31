@@ -1,0 +1,33 @@
+### 
+GET  http://localhost:3000/api/tasks
+
+### Pagination
+GET  http://localhost:3000/api/tasks?page1&size=4
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en Laravel",
+    "description": "trabajo Laravel Home",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/617d32e90fb2740b32873d42
+
+###
+DELETE http://localhost:3000/api/tasks/617d477e4536d22abd950332
+
+###
+GET  http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/617d726ab48a1aefd7ecd545
+Content-Type: application/json
+
+{
+    "title": "Crar un sitio para Roca en Nodejs & react"
+}
